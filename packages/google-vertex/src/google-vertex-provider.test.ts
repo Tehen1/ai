@@ -115,11 +115,10 @@ describe('google-vertex-provider', () => {
       project: 'test-project',
       location: 'test-location',
     });
-    provider.languageModel('test-model-id', { structuredOutputs: true });
+    provider.languageModel('test-model-id');
 
     expect(GoogleGenerativeAILanguageModel).toHaveBeenCalledWith(
       'test-model-id',
-      { structuredOutputs: true },
       expect.any(Object),
     );
   });

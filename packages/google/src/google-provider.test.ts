@@ -111,11 +111,10 @@ describe('google-provider', () => {
     const provider = createGoogleGenerativeAI({
       apiKey: 'test-api-key',
     });
-    provider.chat('gemini-pro', { cachedContent: 'test-name' });
+    provider.chat('gemini-pro');
 
     expect(GoogleGenerativeAILanguageModel).toHaveBeenCalledWith(
       'gemini-pro',
-      { cachedContent: 'test-name' },
       expect.any(Object),
     );
   });
