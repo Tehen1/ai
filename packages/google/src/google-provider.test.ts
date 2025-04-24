@@ -80,7 +80,7 @@ describe('google-provider', () => {
       }),
     );
 
-    const options = (GoogleGenerativeAILanguageModel as any).mock.calls[0][2];
+    const options = (GoogleGenerativeAILanguageModel as any).mock.calls[0][1];
     const headers = options.headers();
     expect(headers).toEqual({
       'x-goog-api-key': 'test-api-key',
