@@ -1,5 +1,11 @@
 # @ai-sdk/anthropic
 
+## 2.0.0-canary.12
+
+### Patch Changes
+
+- 5c9eec4: chore(providers/anthropic): switch to providerOptions
+
 ## 2.0.0-canary.11
 
 ### Patch Changes

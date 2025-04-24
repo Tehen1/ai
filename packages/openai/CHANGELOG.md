@@ -1,5 +1,11 @@
 # @ai-sdk/openai
 
+## 2.0.0-canary.13
+
+### Patch Changes
+
+- 177526b: chore(providers/openai-transcription): switch to providerOptions
+
 ## 2.0.0-canary.12
 
 ### Patch Changes
