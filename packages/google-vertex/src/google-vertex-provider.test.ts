@@ -85,7 +85,6 @@ describe('google-vertex-provider', () => {
 
     expect(GoogleGenerativeAILanguageModel).toHaveBeenCalledWith(
       expect.anything(),
-      expect.anything(),
       expect.objectContaining({
         headers: customHeaders,
       }),
@@ -102,7 +101,6 @@ describe('google-vertex-provider', () => {
     provider('test-model-id');
 
     expect(GoogleGenerativeAILanguageModel).toHaveBeenCalledWith(
-      expect.anything(),
       expect.anything(),
       expect.objectContaining({
         generateId: customGenerateId,
@@ -134,7 +132,6 @@ describe('google-vertex-provider', () => {
 
     expect(GoogleGenerativeAILanguageModel).toHaveBeenCalledWith(
       'test-model-id',
-      {},
       expect.objectContaining({
         baseURL: customBaseURL,
       }),
@@ -150,7 +147,6 @@ describe('google-vertex-provider', () => {
 
     expect(GoogleVertexImageModel).toHaveBeenCalledWith(
       'imagen-3.0-generate-001',
-      {},
       expect.objectContaining({
         provider: 'google.vertex.image',
         baseURL:
