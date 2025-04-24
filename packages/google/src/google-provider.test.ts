@@ -31,7 +31,6 @@ describe('google-provider', () => {
 
     expect(GoogleGenerativeAILanguageModel).toHaveBeenCalledWith(
       'gemini-pro',
-      {},
       expect.objectContaining({
         provider: 'google.generative-ai',
         baseURL: 'https://generativelanguage.googleapis.com/v1beta',
@@ -76,7 +75,6 @@ describe('google-provider', () => {
 
     expect(GoogleGenerativeAILanguageModel).toHaveBeenCalledWith(
       expect.anything(),
-      expect.anything(),
       expect.objectContaining({
         headers: expect.any(Function),
       }),
@@ -99,7 +97,6 @@ describe('google-provider', () => {
     provider('gemini-pro');
 
     expect(GoogleGenerativeAILanguageModel).toHaveBeenCalledWith(
-      expect.anything(),
       expect.anything(),
       expect.objectContaining({
         generateId: customGenerateId,
@@ -129,7 +126,6 @@ describe('google-provider', () => {
 
     expect(GoogleGenerativeAILanguageModel).toHaveBeenCalledWith(
       'gemini-pro',
-      {},
       expect.objectContaining({
         baseURL: customBaseURL,
       }),
