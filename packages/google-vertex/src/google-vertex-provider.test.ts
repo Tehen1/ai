@@ -37,7 +37,6 @@ describe('google-vertex-provider', () => {
 
     expect(GoogleGenerativeAILanguageModel).toHaveBeenCalledWith(
       'test-model-id',
-      {},
       expect.objectContaining({
         provider: 'google.vertex.chat',
         baseURL:
@@ -147,6 +146,7 @@ describe('google-vertex-provider', () => {
 
     expect(GoogleVertexImageModel).toHaveBeenCalledWith(
       'imagen-3.0-generate-001',
+      {},
       expect.objectContaining({
         provider: 'google.vertex.image',
         baseURL:
